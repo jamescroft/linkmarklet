@@ -119,7 +119,7 @@ class Linkmarklet
     {
         $linkmarklet = "javascript:var%20d=document,w=window,e=w.getSelection,k=d.getSelection,x=d.selection,s=(e?e():(k)?k():(x?x.createRange().text:0)),f='" . LINKMARKLET_URL . "',l=d.location,e=encodeURIComponent,u=f+'?u='+e(l.href.replace(new RegExp('(https?:\/\/)','gm'),''))+'&t='+e(d.title)+'&s='+e(s)+'&v=4&m='+(((l.href).indexOf('https://',0)===0)?1:0);a=function(){if(!w.open(u,'t','toolbar=0,resizable=1,scrollbars=1,status=1,width=720,height=570'))l.href=u;};if%20(/Firefox/.test(navigator.userAgent))%20setTimeout(a,%200);%20else%20a();void(0)";
         ?>
-        <p>Drag the Linkmarklet bookmarklet to your bookmark bar: <a href="<?php echo $linkmarklet; ?>">Linkmarklet</a></p>
+        <p>Want to do some link blogging? Drag the linkmarklet to your bookmark bar: <a href="<?php echo $linkmarklet; ?>">Reckoner Linkmarklet</a></p>
         <p><strong>Alternative:</strong> Open <a href="<?php echo LINKMARKLET_URL . '/remove-this.php?' . $linkmarklet; ?>">this URL</a> in a new page, save it as a bookmark, <em>remove everything</em> before <code>javascript:</code>, and save</p>
         <?php
     }
