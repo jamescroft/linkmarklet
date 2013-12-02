@@ -36,6 +36,9 @@ $selection = '';
 if ( !empty($_GET['s']) ) {
     $selection = str_replace( '&apos;', "'", stripslashes( $_GET['s'] ) );
     $selection = trim( htmlspecialchars( html_entity_decode($selection, ENT_QUOTES) ) );
+	// Add author marker, selection as markdown quote & spacing to the selection
+    $selection = "[Author]: " . "\r\n\r\n" . "> " . implode( "</p>\n\n<p>", preg_split( '/\n(?:\s*\n)+/', $selection ) ) . "\r\n\r\n"; 
+
 }
 
 if ( ! empty($selection) ) {

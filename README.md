@@ -1,3 +1,8 @@
+
+A fork of Linkmarklet to facilitate ease of linkblogging by formatting selected text as a markdown quote and adding markers for author attribution and a carriage return for comment.
+
+---
+
 This is a WordPress plugin. [Official download available on the WordPress Plugin Directory](http://wordpress.org/extend/plugins/linkmarklet/).
 
 # Linkmarklet
